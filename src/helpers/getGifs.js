@@ -1,5 +1,6 @@
 import { config } from "../config/config";
 
+
 export const getGifs = async (category) => {
   const url = `https://api.giphy.com/v1/gifs/search?api_key=${config.VITE_APP_APIKEY}&q=${category}&limit=10`;
   const resp = await fetch(url);
